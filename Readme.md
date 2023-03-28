@@ -17,7 +17,7 @@
 
 ### 利用方法
 本プラグインの導入から集計の実施までの手順は以下の通りです。
-詳細な操作方法は本プラグインの[利用マニュアル](https://project-plateau.github.io/PLATEAU-UC22-040-QGIS-aggregate-plugin/)を参照ください。
+詳細な操作方法は本プラグインの[利用マニュアル](https://project-plateau.github.io/UC22-040-QGIS-aggregate-plugin/)を参照ください。
 なお、本プラグインは、QGIS上のベクタレイヤに対応しています。
 
 1.	[本プラグインをダウンロード](../../releases)
