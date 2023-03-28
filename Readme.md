@@ -1,11 +1,12 @@
 # FY2022 Project PLATEAU UC22-040 「ウォーカブルな空間設計のためのスマート・プランニング 」の成果物
 ### QGIS用集計プラグイン(aggregate_inside_buffer for QGIS)
+![231-sample-data](https://user-images.githubusercontent.com/79615787/228103408-cf6b249c-3827-4c2d-8cb9-05b82028b673.png)
 
 ## 概要 
-本集計プラグイン(aggregate_inside_buffer for QGIS)は、QGIS上で任意のベクタレイヤから指定の範囲内にあるベクタレイヤを対象として効率的に地物数・属性の集計を行うQGIS用プラグインです。
+本プラグイン(aggregate_inside_buffer for QGIS)は、QGIS上で任意のベクタレイヤから指定の範囲内にあるベクタレイヤを対象として効率的に地物数・属性の集計を行うQGIS用プラグインです。
 
 ## 「ウォーカブルな空間設計のためのスマート・プランニング」について 
-令和4年度の｢まちづくりのデジタルトランスフォーメーションの推進に向けた3D都市モデルを活用した社会的課題解決型ユースケース開発業務（都市計画・まちづくり：ウォーカブルな空間設計のためのスマート・プランニング）｣において、歩行空間再編による人流変化を予測するシミュレーションモデルを開発しました。
+令和4年度の｢まちづくりのデジタルトランスフォーメーションの推進に向けた3D都市モデルを活用した社会的課題解決型ユースケース開発業務（ウォーカブルな空間設計のためのスマート・プランニング）｣において、歩行空間再編による人流変化を予測するシミュレーションモデルを開発しました。
 渋谷区道玄坂の歩行空間再編後イメージによるVRアンケートで把握した、道玄坂への訪問意向の変化を被説明変数とし、現状の人流データや3D都市モデルから取得した沿道の情報を説明変数として、モデル化を行いました。
 本プラグインは、QGIS上での3D都市モデルの建築物モデルからの属性情報の抽出作業の過程において、その効率化を目的として作成したものです。
 
@@ -39,6 +40,6 @@
 * 本リポジトリの利用により生じた損失及び損害等について、国土交通省はいかなる責任も負わないものとします。
 
 ## 参考資料
-* [「ウォーカブルな空間設計のためのスマート・プランニング」技術検証レポート](https://www.mlit.go.jp/plateau/libraries/technical-reports/)  
-* [PLATEAU Webサイト Use caseページ「ウォーカブルな空間設計のためのスマート・プランニング」](https://www.mlit.go.jp/plateau/use-case/)
-* [利用マニュアル](https://andou6460.github.io/PLATEAU-UC22-040-QGIS-aggregate-plugin-Manual/index.html)
+* （近日公開予定）「ウォーカブルな空間設計のためのスマート・プランニング 技術検証レポート: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0022_ver01.pdf  
+* PLATEAU Webサイト Use caseページ「ウォーカブルな空間設計のためのスマート・プランニング」: https://www.mlit.go.jp/plateau/use-case/uc22-040/
+* 利用マニュアル: https://andou6460.github.io/PLATEAU-UC22-040-QGIS-aggregate-plugin-Manual/index.html
