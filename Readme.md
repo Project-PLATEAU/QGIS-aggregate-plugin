@@ -42,4 +42,4 @@
 ## 参考資料
 * （近日公開予定）「ウォーカブルな空間設計のためのスマート・プランニング 技術検証レポート: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0022_ver01.pdf  
 * PLATEAU Webサイト Use caseページ「ウォーカブルな空間設計のためのスマート・プランニング」: https://www.mlit.go.jp/plateau/use-case/uc22-040/
-* 利用マニュアル: https://andou6460.github.io/PLATEAU-UC22-040-QGIS-aggregate-plugin-Manual/index.html
+* 利用マニュアル: https://project-plateau.github.io/UC22-040-QGIS-aggregate-plugin/
