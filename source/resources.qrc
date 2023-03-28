@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/aggregate_inside_buffer" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
