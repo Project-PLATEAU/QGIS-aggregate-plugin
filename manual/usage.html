@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>使用方法 </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="使用方法 ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+
+          
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="使用方法">使用方法</h1>
+
+<p>本プラグインの実行方法を説明します。以下、QGISの言語設定は日本語として記載します。バージョンにより文言が異なる場合があることに留意ください。また、バッファ作成する処理の関係上、本プラグインの実行にあたっては、レイヤのCRS（座標参照系）について、平面直角座標系などのメートルを距離単位とするものに変換することを推奨します。</p>
+<p>ここでは、下図のような経路データ（ラインレイヤ）と沿道の建物データ（ポリゴンレイヤ）を例として、本プラグインの実行手順を示します。</p>
+<p><img src="../resources/usage/231-sample-data.png" alt=""></p>
+<h3 id="事前準備">■データの準備</h3>
+<p></p>
+
+<h4 id="経路データについて">■経路データについて</h4>
+<p>新規に経路データを作成する場合、新規のシェープファイルを作成し、編集機能を有効化して経路データを作成してください。この際、シェープファイルのCRSは平面直角座標系(関東であれば6677)を指定してください。</p>
+<p >また、経路データを作成する際は、QGIS上に地理院タイル等を表示して位置を確認した上で作成してください。</p>
+<h4 id="沿道の建物データについて">■沿道の建物データについて</h4>
+<p>PLATEAUのCityGMLをQGISにインポートする場合、以下の2点について対応してください。</p>
+<p>●ジオメトリの確認と修正</p>
+<p>データの形状によるジオメトリエラーを回避するため、QGISプロセッシングツールの「ジオメトリを修正」を使用して、ジオメトリを修正してください。</p>
+<p>●CRSの設定</p>
+<p>通常、CRS(座標参照系)は緯度経度座標系の6668となっていますが、本プラグインの使用に際しては、平面直角座標系への変更が必要です。<br>
+プロジェクトのCRS及び、レイヤのCRSを地物の座標に即した平面直角座標系(関東であれば6677)に変更してください。</p>
+<p>また、CRSの変更が適切になされているか判断するため、QGIS上に地理院タイル等を表示して位置を確認してください。
+</p>
+
+<p>【参考】</p>
+<li><a href="https://docs.qgis.org/3.28/ja/docs/user_manual/processing_algs/qgis/vectorgeometry.html#fix-geometries">ジオメトリの修正について</a> (QGISユーザーマニュアル)</li>
+<li><a href="https://docs.qgis.org/3.28/ja/docs/user_manual/working_with_projections/working_with_projections.html">CRSの設定について</a> (QGISユーザーマニュアル)</li>
+<li><a href="https://www.mlit.go.jp/plateau/learning/tpc03-4/">座標参照系について</a> (PLATEAUホームページ)</li>
+<li><a href="https://nlftp.mlit.go.jp/ksj/other/QGIS_manual.pdf">QGIS上での地理院地図の表示方法</a> (QGIS操作マニュアル P.17~)
+
+
+<h3 id="プラグイン実行前の確認事項">■プラグイン実行前の確認事項</h3>
+
+<p>プラグインを実行する前に、使用するレイヤについて以下の事項を確認してください。</p>
+<p>■バッファを作成する基準とするレイヤ(経路データ)について</p>
+<li>プロジェクトファイル上に、バッファを作成する基準とするレイヤ(経路データ)が存在する</li>
+<li>単独のベクタレイヤである</li>
+<li>ラインレイヤか、ポリゴンレイヤである</li>
+<li>プロジェクトのCRSは平面直角座標系である</li>
+<p></p>
+<p>■集計対象とするレイヤ(沿道の建物データ)について</p>
+<li>プロジェクトファイル上に、集計対象とするレイヤ(沿道の建物データ)が存在する</li>
+<li>単独のベクタレイヤである</li>
+<li>ポリゴンレイヤである</li>
+<li>プロジェクトのCRSは平面直角座標系である</li>
+
+<p>また、バッファを作成する基準とするレイヤ(経路データ)のうち、特定の経路のみを対象とする場合は、該当する経路をQGIS上で選択してください。</p>
+
+
+<h3 id="実行手順">■実行手順</h3>
+<ol>
+<li>メニュータブの[プラグイン]から本プラグインを選択、またはプラグインツールバー上のアイコンを選択して本プラグインを起動<br>
+※プロジェクトファイル上にベクタレイヤが１つも存在しない場合、本プラグインは起動しません</li>
+<li>本プラグインの設定画面において、各項目を設定</li>
+</ol>
+<p><img src="../resources/usage/232-setting.png" alt=""></p>
+<ol start="3">
+<li>バッファを作成する基準とするレイヤ(経路データ)を指定</li>
+<li>手順3で指定したレイヤ(経路データ)において、経路ごとに一意となる属性(経路名称など)を指定</li>
+<li>集計対象とするレイヤをプルダウンから指定</li>
+<li>QGIS上で選択した地物のみを対象としてバッファを作成する場合、[選択地物のみからバッファを作成する]をチェック<br>
+※地物を選択していない状態でチェックすると、処理時にエラーが発生します</li>
+<li>バッファを作成する距離を指定。<br>
+※距離の単位はバッファを作成するレイヤのCRSに依存します</li>
+</ol>
+<p><img src="../resources/usage/233-buffering.png" alt=""></p>
+<ol start="8">
+<li>作成するバッファのセグメント数（頂点数）を指定<br>
+※セグメント数が大きいほど滑らかな円に近づきます。30程度を指定すれば本分析上で特段の支障はありません</li>
+<li>手順5で指定したレイヤについて、集計対象としない属性があれば[keep]列のチェックを解除<br>
+※デフォルトでは全属性を集計対象に指定</li>
+<li>集計対象とする属性の集計方法を設定</li>
+<li>保存先と、既存のファイルと重複しないようなファイル名称を指定</li>
+<li>｢OK｣を押下して処理を実行し、手順11で指定した名称のレイヤを出力<br>
+※処理の過程上、一時的なレイヤとして｢output｣｢Bufferd｣が作成されますが、最終的な出力物ではないため確認は不要です<br></li>
+</ol>
+<p></p>
+<h4 id="出力データ">出力データについて</h4>
+<p>上記の手順で出力されたファイルでは、以下のように経路データの左側に、集計結果が格納されます。</p>
+
+<p><img src="../resources/usage/234-output.png" alt=""></p>
+
+
+<h3 id="エラー時の対応">■エラー時の対応</h3>
+<li>「無効なジオメトリが存在する」という内容のエラーが出た場合<br>
+　⇒QGISプロセッシングツールの「<a href="https://docs.qgis.org/3.28/ja/docs/user_manual/processing_algs/qgis/vectorgeometry.html#fix-geometries">ジオメトリを修復</a>」を適用し、適用後のレイヤを使用して再度処理を実行してください。</li>
+<li>集計方法が表示されない場合<br>
+　⇒実行手順5「集計対象とするレイヤをプルダウンから指定」を再度実行してください。
+</li>
+
+<h3 id="属性の集計方法一覧">■属性の集計方法一覧</h3>
+<table>
+<thead>
+<tr>
+<th>名称(stat)</th>
+<th>集計方法</th>
+<th>対象データ型(type)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Max</td>
+<td>最大値</td>
+<td>数値型</td>
+</tr>
+<tr>
+<td>Mean</td>
+<td>平均値</td>
+<td>数値型</td>
+</tr>
+<tr>
+<td>Median</td>
+<td>中央値</td>
+<td>数値型</td>
+</tr>
+<tr>
+<td>Min</td>
+<td>最小値</td>
+<td>数値型</td>
+</tr>
+<tr>
+<td>sum</td>
+<td>合計値</td>
+<td>数値型</td>
+</tr>
+<tr>
+<td>count</td>
+<td>地物数</td>
+<td>数値型/文字列型</td>
+</tr>
+<tr>
+<td>uniquification</td>
+<td>重複なしで列挙</td>
+<td>文字列型</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            aggregate_inside_buffer for QGIS
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

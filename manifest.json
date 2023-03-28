@@ -1,0 +1,177 @@
+{
+  "homepages": [],
+  "source_base_path": "",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "FAix3Bye/1c5mvY+sPklc80do8v5T4CzPHZ/5glXXCA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/about.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/about.html",
+          "hash": "2dL8Nk9NC2Rni26iGxOHyzwgv0qnFqRPq2pI2RxjiJY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "manual/install.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/install.html",
+          "hash": "8c0xg5gOBeXP7ftpT35+nX7K0Vj9B2HFm8ZYlKLTlyM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/structure.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/structure.html",
+          "hash": "IkN4iOKPxV+aITj4Ibw1gSq39VgzGVjCFlGlNpB3ojo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "A1J5v0H/ZmlD9mcdswlYmRvqTRtC3pAXdNSSVwDIUzc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/usage.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/usage.html",
+          "hash": "7VqMgQgp8hxAMfYTg75nCBMIcvQBng980pmVjrKjXg0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/index/231-sample-data.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/index/231-sample-data.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/install/211-install.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/install/211-install.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/install/212-activate.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/install/212-activate.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/install/221-uninstall.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/install/221-uninstall.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/structure/311-folder-structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/structure/311-folder-structure.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/structure/322-processing.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/structure/322-processing.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/usage/231-sample-data.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/usage/231-sample-data.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/usage/232-setting.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/usage/232-setting.png"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "LKx8vuyb+lBWMMlgoHMtN3BgMoKWoPrQPSEm9jSXfTA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ]
+}
