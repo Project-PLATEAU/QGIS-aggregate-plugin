@@ -18,7 +18,7 @@
 
 ### 利用方法
 本プラグインの導入から集計の実施までの手順は以下の通りです。
-詳細な操作方法は本プラグインの[利用マニュアル](https://project-plateau.github.io/UC22-040-QGIS-aggregate-plugin/)を参照ください。
+詳細な操作方法は本プラグインの[利用マニュアル](https://project-plateau.github.io/QGIS-aggregate-plugin/)を参照ください。
 なお、本プラグインは、QGIS上のベクタレイヤに対応しています。
 
 1.	[本プラグインをダウンロード](../../releases)
@@ -42,4 +42,4 @@
 ## 参考資料
 * （近日公開予定）「ウォーカブルな空間設計のためのスマート・プランニング 技術検証レポート: https://www.mlit.go.jp/plateau/file/libraries/doc/plateau_tech_doc_0022_ver01.pdf  
 * PLATEAU Webサイト Use caseページ「ウォーカブルな空間設計のためのスマート・プランニング」: https://www.mlit.go.jp/plateau/use-case/uc22-040/
-* 利用マニュアル: https://project-plateau.github.io/UC22-040-QGIS-aggregate-plugin/
+* 利用マニュアル: https://project-plateau.github.io/QGIS-aggregate-plugin/
